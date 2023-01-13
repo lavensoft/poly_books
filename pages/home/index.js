@@ -1,4 +1,4 @@
-import { BookDetailSection, BookSection, Container,Navbar } from '@components';
+import { BookDetailSection, BookSection, Container,Navbar, BookCard } from '@components';
 import React from 'react';
 
 import styles from './styles.module.scss';
