@@ -1,0 +1,25 @@
+.btn {
+    transition-property: background-color;
+    transition-duration: .5s;
+    transition-timing-function: ease;
+    border:none;
+    box-shadow: 0px 0px 2px black;
+}
+
+.btn:hover {
+    color: black;
+    box-shadow: none;
+
+    font-weight: bold;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.btn.active {
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: none;
+
+    font-weight: bold;
+    border:none;
+}
