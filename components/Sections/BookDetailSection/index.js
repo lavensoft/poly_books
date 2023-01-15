@@ -6,6 +6,7 @@ import style from './index.module.scss'
 import BookCard from "@components/Cards/DetailCard/index";
 import DetailCard from "@components/Cards/DetailCard/index";
 
+
 const data = [
     {
         img: 'https://books.google.com/books/content/images/frontcover/r23bFouhu1MC?fife=w256-h256',
@@ -118,7 +119,9 @@ function BookDetailSection() {
                                                             title={book.title} 
                                                             price={book.price}
                                                         />
+                                                       
                                                     </Col>
+                                                   
                                                 )
                                             }
                                         })

@@ -1,7 +1,8 @@
-import { BookDetailSection, BookSection, Container,Navbar, BookCard } from '@components';
+import { BookDetailSection, BookSection, Container,Navbar, BookCard,  } from '@components';
 import React from 'react';
 
 import styles from './styles.module.scss';
+import DetailInfo from '@components/DetailInfo/index';
 
 const data = [
     {
@@ -40,6 +41,12 @@ const HomeView = () => {
     return (
         <Container>
             <Navbar/>
+            <DetailInfo 
+                rating='5'
+                viewCount='125'
+                category='hentai'
+                pages='180'
+            ></DetailInfo>
             <div className={styles.view}>
                 <h1 className={styles.title}>HELLO WORLD!!!</h1>
             </div>
