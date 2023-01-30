@@ -6,6 +6,8 @@ import BookDetailSection from './Sections/BookDetailSection';
 import Button from './Button';
 import Footer from './Footer';
 import BookHeaderSection from './Sections/BookHeaderSection';
+import BookRecommendSection from './Sections/BookRecommendSection';
+import BookAboutSection from './Sections/BookAboutSection';
 export {
     Carousel,
     Container,
@@ -14,5 +16,7 @@ export {
     BookDetailSection,
     Button,
     Footer,
-    BookHeaderSection
+    BookHeaderSection,
+    BookRecommendSection,
+    BookAboutSection
 }
