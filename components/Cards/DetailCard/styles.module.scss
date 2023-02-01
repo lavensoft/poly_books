@@ -1,0 +1,18 @@
+.detailCard {
+    & .image {
+        width: 32%;
+        object-fit: contain;
+    }
+
+    & .body {
+        margin-left: 16px;
+
+        & .title {
+            font-size: 15px;
+        }
+
+        & .text {
+            font-size: 13px;
+        }
+    }
+}
