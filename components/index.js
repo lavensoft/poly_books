@@ -8,6 +8,8 @@ import Footer from './Footer';
 import BookHeaderSection from './Sections/BookHeaderSection';
 import BookRecommendSection from './Sections/BookRecommendSection';
 import BookAboutSection from './Sections/BookAboutSection';
+import BookCard from './cards/BookCard';
+
 export {
     Carousel,
     Container,
@@ -18,5 +20,6 @@ export {
     Footer,
     BookHeaderSection,
     BookRecommendSection,
-    BookAboutSection
+    BookAboutSection,
+    BookCard
 }
