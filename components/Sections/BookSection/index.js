@@ -1,9 +1,9 @@
 import { Carousel } from "@components";
 import Title from "@components/Title";
 import { config } from "@config";
+import Link from "next/link";
 import { Row } from "react-bootstrap";
 import BookCard from "@components/Cards/BookCard";
-
 
 function BookSection({ children }) {
     return (

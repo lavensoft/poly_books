@@ -1,0 +1,68 @@
+export const DATA = {
+    books: [
+        {
+            id: 1,
+            title: "Failure Frame: I Became the Strongest and Annihilated Everything With Low-Level Spells (Manga) Vol. 5",
+            photo: "https://books.google.com/books/publisher/content/images/frontcover/E3-fEAAAQBAJ?fife=w240-h345",
+            old_price: 246819,
+            new_price: 167837,
+            rate: 4.5,
+            pages: 172,
+            content: "While Mimori Touka finishes his battle with the Strongest Man in the World, his former classmates are leveling up under the Goddess's instruction--and becoming drunk on their own power. Their skills are tested when they're pitted against a new foe. As part of his revenge plot, Touka forms a group of mercenaries eager to put an end to the Goddess once and for all.",
+            language: "English",
+            features: "Original pages",
+            seller: "Google Ireland Ltd",
+            author: ["Kaoru Shinozaki", "Keyaki Uchiuchi", "Sho Uyoshi"],
+            publisher: "Seven Seas Entertainment",
+            time_published: "20/12/2022",
+            isbn: 9781685793845,
+            best_for: "web,tablet,phone,eReader",
+            genres: ["Comics & Graphic Novels", "Manga", "Fantasy"],
+            tags: [{ id: 1, name: "Series" }, { id: 2, name: "Comics" }],
+            reviews: 8
+        },
+        {
+            id: 2,
+            title: "Attack on Titan Vol 33",
+            photo: "https://books.google.com/books/publisher/content/images/frontcover/wbIoEAAAQBAJ?fife=w240-h345",
+            old_price: 271098,
+            new_price: 184347,
+            rate: 4.7,
+            pages: 192,
+            content: "Once hailed as humanity’s greatest hope, Eren has since become unrecognizable. With the Attack Titan now morphed into a grotesque, colossal skeleton of its former self, Eren continues to control the wave of Titans laying waste to the world, extinguishing countless homes, towns, and lives in their wake. In order to salvage what’s left of humanity, Mikasa, Armin, and the Survey Corps decide to confront Eren head-on. But to stop the Rumbling, they’ll have to dedicate much more than their hearts...",
+            language: "English",
+            features: "Original pages",
+            seller: "Google Ireland Ltd",
+            author: "Hajime Isayama",
+            publisher: "Kodansha America LLC",
+            time_published: "04/05/2021",
+            isbn: 9781636990279,
+            best_for: "web,tablet,phone,eReader",
+            genres: ["Comics & Graphic Novels", "Manga", "General"],
+            tags: [{ id: 1, name: "Series" }, { id: 2, name: "Comics" }],
+            reviews: 481
+        },
+        {
+            id: 3,
+            title: "7th Time Loop: The Villainess Enjoys a Carefree Life Married to Her Worst Enemy! (Manga)",
+            photo: "https://books.google.com/books/publisher/content/images/frontcover/AQCWEAAAQBAJ?fife=w240-h345",
+            old_price: 246819,
+            new_price: 167837,
+            rate: 4.8,
+            pages: 184,
+            content: "Every time Rishe turns twenty, she dies and is reincarnated to the day her engagement is broken off. This time around, she winds up the fiancee of the man who killed her in her previous life: the crown prince of the Galkhein Empire, Arnold! Knowing from her past lives that Galkhein is on the path to war, Rishe is determined to prevent it. She starts by turning the royal villa into a training ground...for handmaidens! Will her unorthodox plans be enough to keep disaster at bay?",
+            language: "English",
+            features: "Original pages",
+            seller: "Google Ireland Ltd",
+            author: ["Touko Amekawa", "Hinoki Kino"],
+            publisher: "Seven Seas Entertainment",
+            time_published: "13/12/2022",
+            isbn: 9781685799939,
+            best_for: "web,tablet,phone,eReader",
+            genres: ["Comics & Graphic Novels", "Manga", "Fantasy"],
+            tags: [{ id: 1, name: "Series" }, { id: 2, name: "Comics" }],
+            reviews: 5
+        }
+    ]
+};
+

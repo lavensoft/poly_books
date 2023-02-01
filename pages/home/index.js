@@ -1,6 +1,6 @@
 import { BookDetailSection, BookSection, Container,Navbar, BookCard,  } from '@components';
 import React from 'react';
-
+import {DATA} from '../../mock/index';
 import styles from './styles.module.scss';
 import DetailInfo from '@components/DetailInfo/index';
 
@@ -39,6 +39,11 @@ const data = [
 
 const HomeView = () => {
     return (
+        <>
+            <div className={styles.view}>
+                <h1 className={styles.title}>HELLO WORLD!!!</h1>
+            </div>
+           <BookSection data={DATA.books}/>
         <Container>
             <Navbar/>
             <DetailInfo 
@@ -58,7 +63,7 @@ const HomeView = () => {
                 }
            </BookSection>
            <BookDetailSection/>
-        </Container>
+        </>
 
     )
 }
