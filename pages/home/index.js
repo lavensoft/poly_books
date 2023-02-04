@@ -40,29 +40,36 @@ const data = [
 const HomeView = () => {
     return (
         <>
+            {/* <Navbar/> */}
             <div className={styles.view}>
                 <h1 className={styles.title}>HELLO WORLD!!!</h1>
             </div>
-           <BookSection data={DATA.books}/>
-        <Container>
-            <Navbar/>
-            <DetailInfo 
-                rating='5'
-                viewCount='125'
-                category='hentai'
-                pages='180'
-            ></DetailInfo>
-            <div className={styles.view}>
-                <h1 className={styles.title}>HELLO WORLD!!!</h1>
-            </div>
-           <BookSection>
+            <BookSection>
                 {
                     data.map((book, index) => {
                         return <BookCard key={`book-card-1-${index}`} img={book.img} title={book.title} price={book.price}/>
                     })
                 }
-           </BookSection>
-           <BookDetailSection/>
+            </BookSection>
+            <Container>
+                <DetailInfo 
+                    rating='5'
+                    viewCount='125'
+                    category='hentai'
+                    pages='180'
+                ></DetailInfo>
+                <div className={styles.view}>
+                    <h1 className={styles.title}>HELLO WORLD!!!</h1>
+                </div>
+            </Container>
+            <BookSection>
+                {
+                    data.map((book, index) => {
+                        return <BookCard key={`book-card-1-${index}`} img={book.img} title={book.title} price={book.price}/>
+                    })
+                }
+            </BookSection>
+            <BookDetailSection/>
         </>
 
     )
