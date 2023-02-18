@@ -1,6 +1,6 @@
 import { BookDetailSection, BookSection, Container,Navbar, BookCard } from '@components';
 import React from 'react';
-
+import {DATA} from '../../mock/index';
 import styles from './styles.module.scss';
 import DetailInfo from '@components/DetailInfo/index';
 import Prop from '@components/Popup/index';
@@ -50,18 +50,32 @@ const HomeView = () => {
             ></DetailInfo>
 
             <Prop></Prop>
+        <>
+            {/* <Navbar/> */}
             <div className={styles.view}>
                 <h1 className={styles.title}>HELLO WORLD!!!</h1>
             </div>
-           <BookSection>
+            <BookSection>
                 {
                     data.map((book, index) => {
                         return <BookCard key={`book-card-1-${index}`} img={book.img} title={book.title} price={book.price}/>
                     })
                 }
-           </BookSection>
-           <BookDetailSection/>
-        </Container>
+            </BookSection>
+            <Container>
+                <div className={styles.view}>
+                    <h1 className={styles.title}>HELLO WORLD!!!</h1>
+                </div>
+            </Container>
+            <BookSection>
+                {
+                    data.map((book, index) => {
+                        return <BookCard key={`book-card-1-${index}`} img={book.img} title={book.title} price={book.price}/>
+                    })
+                }
+            </BookSection>
+            <BookDetailSection/>
+        </>
 
     )
 }
