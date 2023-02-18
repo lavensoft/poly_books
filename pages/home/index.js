@@ -52,12 +52,6 @@ const HomeView = () => {
                 }
             </BookSection>
             <Container>
-                <DetailInfo 
-                    rating='5'
-                    viewCount='125'
-                    category='hentai'
-                    pages='180'
-                ></DetailInfo>
                 <div className={styles.view}>
                     <h1 className={styles.title}>HELLO WORLD!!!</h1>
                 </div>

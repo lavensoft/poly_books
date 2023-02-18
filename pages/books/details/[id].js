@@ -1,8 +1,6 @@
 import { BookAboutSection, BookHeaderSection, BookRecommendSection } from "@components";
 import { Col, Row } from "react-bootstrap";
 import { DATA } from "@mock";
-import { useRouter } from "next/router";
-import { useContext, useEffect, useState } from "react";
 const details = ({data}) => {
 
     return (
@@ -13,7 +11,7 @@ const details = ({data}) => {
                     <BookAboutSection data={data}/>
                 </Col>
                 <Col md={4}>
-                    <BookRecommendSection/>
+                    <BookRecommendSection data={data}/>
                 </Col>
             </Row>
         </>
@@ -22,7 +20,6 @@ const details = ({data}) => {
 }
 export async function getStaticProps (context) {
     const {params} = context;
-    console.log(params);
     const {id} = params;
     const data =DATA.books.find(s=> s.id == id);
     return {

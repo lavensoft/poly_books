@@ -1,3 +1,6 @@
+import Button from '@components/Button';
+import BadgeButton from '@components/Button/BadgeButton';
+import DetailInfo from '@components/DetailInfo';
 import Title from '@components/Title';
 
 import Image from 'next/image';
@@ -16,8 +19,14 @@ const BookHeaderSection = ({ data }) => {
                 <Image src={data.photo} width={200} height={300} alt="Image" />
                 <div className={`${style.detail}`}>
                     <Title className={`mb-2 text-white`} text={`${data.title}`} />
-                    <span>sndgasdjgnao</span>
+                    <span>Tác giả</span>
                     <div className={style.sectionInfo}>
+                        <DetailInfo rating={data.rate} reviewCount={data.reviews} category={"Comics & Graphic Novels"} pages={data.pages} releaseDate={data.time_published} language={data.language}/>
+                        <div>
+                            {/* <Button>{data.new_price} đ</Button>
+                            <Button secondary={false}>{data.new_price} đ</Button> */}
+                            <BadgeButton>{data.new_price} đ</BadgeButton>
+                        </div>
                     </div>
                 </div>
 

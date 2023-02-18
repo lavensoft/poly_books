@@ -9,7 +9,10 @@ import BookHeaderSection from './Sections/BookHeaderSection';
 import BookRecommendSection from './Sections/BookRecommendSection';
 import BookAboutSection from './Sections/BookAboutSection';
 import BookCard from './cards/BookCard';
-
+import DefaultLayout from './Layout/DefaultLayout';
+import ReadLayout from './Layout/ReadLayout';
+import FilterButton from './Button/FilterButton';
+import ContentSection from "./Sections/ContentSection";
 export {
     Carousel,
     Container,
@@ -21,5 +24,9 @@ export {
     BookHeaderSection,
     BookRecommendSection,
     BookAboutSection,
-    BookCard
+    BookCard,
+    DefaultLayout,
+    ReadLayout,
+    FilterButton,
+    ContentSection
 }
