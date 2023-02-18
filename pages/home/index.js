@@ -1,8 +1,9 @@
-import { BookDetailSection, BookSection, Container,Navbar, BookCard,  } from '@components';
+import { BookDetailSection, BookSection, Container,Navbar, BookCard } from '@components';
 import React from 'react';
 import {DATA} from '../../mock/index';
 import styles from './styles.module.scss';
 import DetailInfo from '@components/DetailInfo/index';
+import Prop from '@components/Popup/index';
 
 const data = [
     {
@@ -39,6 +40,16 @@ const data = [
 
 const HomeView = () => {
     return (
+        <Container>
+            <Navbar/>
+            <DetailInfo 
+                rating='5'
+                viewCount='125'
+                category='hentai'
+                pages='180'
+            ></DetailInfo>
+
+            <Prop></Prop>
         <>
             {/* <Navbar/> */}
             <div className={styles.view}>
