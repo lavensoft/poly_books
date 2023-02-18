@@ -13,6 +13,12 @@ import DefaultLayout from './Layout/DefaultLayout';
 import ReadLayout from './Layout/ReadLayout';
 import FilterButton from './Button/FilterButton';
 import ContentSection from "./Sections/ContentSection";
+import { View } from './View';
+import { LandingCarousel } from './Carousel/LandingCarousel';
+import { Section } from "./Sections";
+import { GenreCard } from "./Cards/GenreCard";
+import { BookSubSection } from "./SubSection/BookSubSection";
+
 export {
     Carousel,
     Container,
@@ -28,5 +34,10 @@ export {
     DefaultLayout,
     ReadLayout,
     FilterButton,
-    ContentSection
+    ContentSection,
+    View,
+    LandingCarousel,
+    Section,
+    GenreCard,
+    BookSubSection
 }

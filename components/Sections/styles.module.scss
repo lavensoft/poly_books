@@ -1,0 +1,36 @@
+@import "@styles/lavenes.scss";
+
+.sectionDark {
+    background-color: #000;
+    color: #fff!important;
+}
+
+.section {
+    padding: 12px;
+    margin-block: 64px;
+    padding-block: 0;
+
+    & .container {
+        max-width: 1104px;
+
+        & .sectionTitle {
+            margin-bottom: 32px;
+
+            & .subTitle {
+                font-size: 12px;
+                font-weight: 600;
+                text-transform: uppercase;
+                color: $text-color-dark;
+                text-transform: uppercase;
+            }
+    
+            & .title {
+                margin-top: 4px;
+                text-transform: uppercase;
+                color: $text-color-dark;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

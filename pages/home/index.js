@@ -1,38 +1,40 @@
-import { BookDetailSection, BookSection, Container,Navbar, BookCard } from '@components';
+import { BookDetailSection, Carousel, BookSubSection, GenreCard, BookSection, Container, Section, BookCard, View, LandingCarousel } from '@components';
 import React from 'react';
 import {DATA} from '../../mock/index';
 import styles from './styles.module.scss';
 import DetailInfo from '@components/DetailInfo/index';
 import Prop from '@components/Popup/index';
+import { Col, Row } from 'react-bootstrap';
+import { config } from "@config";
 
 const data = [
     {
-        img: 'https://books.google.com/books/content/images/frontcover/r23bFouhu1MC?fife=w256-h256',
+        img: 'https://books.google.com/books/content/images/frontcover/9N233mxleh8C?fife=w480-h690',
         title: "Book 1",
         price: 120000
     },
     {
-        img: 'https://books.google.com/books/content/images/frontcover/r23bFouhu1MC?fife=w256-h256',
+        img: 'https://books.google.com/books/content/images/frontcover/9N233mxleh8C?fife=w480-h690',
         title: "Book 1",
         price: 120000
     },
     {
-        img: 'https://books.google.com/books/content/images/frontcover/r23bFouhu1MC?fife=w256-h256',
+        img: 'https://books.google.com/books/content/images/frontcover/9N233mxleh8C?fife=w480-h690',
         title: "Book 1",
         price: 120000
     },
     {
-        img: 'https://books.google.com/books/content/images/frontcover/r23bFouhu1MC?fife=w256-h256',
+        img: 'https://books.google.com/books/content/images/frontcover/9N233mxleh8C?fife=w480-h690',
         title: "Book 1",
         price: 120000
     },
     {
-        img: 'https://books.google.com/books/content/images/frontcover/r23bFouhu1MC?fife=w256-h256',
+        img: 'https://books.google.com/books/content/images/frontcover/9N233mxleh8C?fife=w480-h690',
         title: "Book 1",
         price: 120000
     },
     {
-        img: 'https://books.google.com/books/content/images/frontcover/r23bFouhu1MC?fife=w256-h256',
+        img: 'https://books.google.com/books/content/images/frontcover/9N233mxleh8C?fife=w480-h690',
         title: "Book 1",
         price: 120000
     }
@@ -40,42 +42,58 @@ const data = [
 
 const HomeView = () => {
     return (
-        <Container>
-            <Navbar/>
-            <DetailInfo 
-                rating='5'
-                viewCount='125'
-                category='hentai'
-                pages='180'
-            ></DetailInfo>
+        <View>
+            <LandingCarousel/>
 
-            <Prop></Prop>
-        <>
-            {/* <Navbar/> */}
-            <div className={styles.view}>
-                <h1 className={styles.title}>HELLO WORLD!!!</h1>
-            </div>
-            <BookSection>
-                {
-                    data.map((book, index) => {
-                        return <BookCard key={`book-card-1-${index}`} img={book.img} title={book.title} price={book.price}/>
-                    })
-                }
-            </BookSection>
-            <Container>
-                <div className={styles.view}>
-                    <h1 className={styles.title}>HELLO WORLD!!!</h1>
-                </div>
-            </Container>
-            <BookSection>
-                {
-                    data.map((book, index) => {
-                        return <BookCard key={`book-card-1-${index}`} img={book.img} title={book.title} price={book.price}/>
-                    })
-                }
-            </BookSection>
+            <Section
+                title="Spring 2023"
+                subTitle="Spring 2023"
+            >
+                <Row>
+                    <Col>
+                        <GenreCard/>
+                    </Col>
+                    <Col>
+                        <GenreCard/>
+                    </Col>
+                    <Col>
+                        <GenreCard/>
+                    </Col>
+                </Row>
+            </Section>
+
+            <Section dark>
+                <BookSubSection/>
+            </Section>
+
+            <Section title="Sách Bán Chạy" subTitle="Các sách bán chạy đầu mùa xuân 2023">
+                <Carousel responsive={config.responsive.BookSection}>
+                    <Row>
+                    {
+                        data.map((book, index) => {
+                            return (
+                                <Col md={4} key={`book-card-col-1-${index}`}>
+                                    <BookCard img={book.img} title={book.title} price={book.price}/>
+                                </Col>
+                            )
+                        })
+                    }
+                    </Row>
+                    <Row style={{marginTop: 15}}>
+                    {
+                        data.map((book, index) => {
+                            return (
+                                <Col md={4} key={`book-card-col-${index}`}>
+                                    <BookCard img={book.img} title={book.title} price={book.price}/>
+                                </Col>
+                            )
+                        })
+                    }
+                    </Row>
+                </Carousel>
+            </Section>
             <BookDetailSection/>
-        </>
+        </View>
 
     )
 }

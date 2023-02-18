@@ -1,11 +1,133 @@
-.pictr{
-    // width: 50%;
-    // display: block;
-    // margin: 0 auto;
+.bookCard{
     width: 100%;
-    object-fit: cover;
+    height: 450px;
+    border-radius: 0;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    margin-bottom: 27px;
 
-}
-.card{
-    width: 200px;
+    &:hover {
+        & .imageContainer {
+            &::before {
+                opacity: 1;
+            }
+
+            & .image {
+                transform: scale(1.05);
+            }
+
+            & a {
+                opacity: 1;
+                margin-top: 0;
+            }
+        }
+
+        & .foot {
+            & .action {
+                & .icon {
+                    margin-right: 12px;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    & .imageContainer {
+        width: 100%;
+        height: 400px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(0,0,0,.4);
+            opacity: 0;
+            transition: all .5s ease;
+            z-index: 3;
+        }
+
+        & .image {
+            width: 100%;
+            height: 351px;
+            object-fit: contain;
+            border-radius: 9px;
+            transition: all .5s ease;
+            z-index: 2;
+        }
+
+        & .imageShadow {
+            width: 60%;
+            height: 351px;
+            position: absolute;
+            object-fit: contain;
+            border-radius: 9px;
+            transition: all .5s ease;
+            margin-top: 24px;
+            filter: blur(9px);
+        }
+        
+        & a {
+            display: block;
+            position: absolute;
+            margin-top: 24px;
+            opacity: 0;
+            color: #fff;
+            font-size: 15px;
+            font-weight: 600;
+            transition: .5s ease;
+            text-transform: uppercase;
+            z-index: 5;
+            text-decoration: none;
+        }
+    }
+
+    & .foot {
+        display: flex;
+
+        & .information {
+            flex: 1;
+
+            & .title {
+                display: block;
+                font-weight: 500;
+                margin: 9px 0 3px 0;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                text-decoration: none;
+                color: #414141;
+            }
+
+            & .price {
+                display: block;
+                font-weight: 500;
+                font-size: 14px;
+                color: #6f6f6f;
+            }
+        }
+
+        & .action {
+            display: flex;
+            align-items: center;
+
+            & .icon {
+                margin-right: 24px;
+                opacity: 0;
+                transition: all .4s ease;
+                color: #414141;
+                font-size: 20px;
+            }
+        }
+    }
 }
