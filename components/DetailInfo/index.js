@@ -1,11 +1,7 @@
 import Styles from './Styles.module.scss';
 
-function DetailInfo({ rating=0, reviewCount=0, category, pages=0, releaseDate, language}){
+function DetailInfo({ rating, reviewCount, category, pages, releaseDate, language}){
     return(
-
-
-
-
     <div className={`${Styles.info}`}>
         {/*  */}
         <div className="rating m-5">

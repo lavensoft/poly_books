@@ -19,7 +19,8 @@
       "@utils": ["utils"],
       "@utils/*": ["utils/*"],
       "@pages": ["pages"],
-      "@pages/*": ["pages/*"]
+      "@pages/*": ["pages/*"],
+      "@mock":["mock"]
     }
   }
 }
