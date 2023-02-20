@@ -13,9 +13,9 @@ function CustomNavbar() {
               navbarScroll
             >
               <Nav.Link href="#action1">Home</Nav.Link>
-              <Nav.Link href="#action2">Link</Nav.Link>
-              <NavDropdown title="Link" id="navbarScrollingDropdown">
-                <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
+              
+              <NavDropdown title="Creatory" id="navbarScrollingDropdown">
+                <NavDropdown.Item href="#action3">link</NavDropdown.Item>
                 <NavDropdown.Item href="#action4">
                   Another action
                 </NavDropdown.Item>
@@ -24,8 +24,9 @@ function CustomNavbar() {
                   Something else here
                 </NavDropdown.Item>
               </NavDropdown>
+              <Nav.Link href="#action2">Bill</Nav.Link>
               <Nav.Link href="#" disabled>
-                Link
+                Account
               </Nav.Link>
             </Nav>
             <Form className="d-flex">

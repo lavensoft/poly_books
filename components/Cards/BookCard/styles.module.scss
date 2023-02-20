@@ -8,4 +8,8 @@
 }
 .card{
     width: 200px;
+    border: none;
+        &:hover{
+            opacity: 0.4;
+        }
 }

@@ -3,7 +3,8 @@ import React from 'react';
 
 import styles from './styles.module.scss';
 import DetailInfo from '@components/DetailInfo/index';
-import Prop from '@components/Popup/index';
+import PropSearch from '@components/Popup/PropsSearch/index';
+import PropEdit from '@components/Popup/PropsEdit/index';
 
 const data = [
     {
@@ -42,16 +43,12 @@ const HomeView = () => {
     return (
         <Container>
             <Navbar/>
-            <DetailInfo 
-                rating='5'
-                viewCount='125'
-                category='hentai'
-                pages='180'
-            ></DetailInfo>
+            
 
-            <Prop></Prop>
+           <PropEdit></PropEdit>
+           
             <div className={styles.view}>
-                <h1 className={styles.title}>HELLO WORLD!!!</h1>
+                <h1 className={styles.title}></h1>
             </div>
            <BookSection>
                 {

@@ -34,9 +34,11 @@ const data = [{
 }] ;
 
 
-function Prop({  }){
+function Prop({ visible=true, onClose=()=>{}}){
 
-    const [inputText, setInputText] = useState("");
+    const [inputText, setInputText] = useState([
+       
+    ]);
     let inputHandler = (e) => {
     //convert input text to lower case
         var lowerCase = e.target.value.toLowerCase();
@@ -62,18 +64,18 @@ function Prop({  }){
             <div className="nav"> 
                 <p>Search</p>
                 <div className="d-flex justify-content-right">
-                    <button  className={`butclose  ${Styles.butclose}`}>X</button>
+                    <button  className={`butclose  ${Styles.butclose}`} onClick={onClose}>X</button>
                 </div>
                
             </div><hr/>
 
             <div className=""> 
                 <input onChange={inputHandler}></input>
-                <div className="d-flex pt-3">
-                    <p>
+                <div className="d-flex pt-3  justify-content-between">
+                    <p className="">
                         Results in books
                     </p>
-                    <button className={`butSearch  ${Styles.butSearch}`}>Search the web</button>
+                    <button className={`  btn btn-outline-primary  ${Styles.butSearch}`}>Search the web</button>
                 </div>
             </div>
 
