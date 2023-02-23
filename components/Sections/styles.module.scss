@@ -31,6 +31,12 @@
                 font-weight: 700;
                 text-transform: uppercase;
             }
+
+            & .badgeContainer {
+                display: flex;
+                gap: 21px;
+                margin-top: 15px;
+            }
         }
     }
 }

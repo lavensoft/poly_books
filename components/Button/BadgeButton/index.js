@@ -1,9 +1,12 @@
 import { Button } from "react-bootstrap";
+import styles from "./styles.module.scss";
 
-function BadgeButton({children}){
+function BadgeButton({children, active=false, onClick=() => {}}){
     return (
-        <Button className="rounded-5" >{children}</Button>
-
+        <button 
+            onClick={onClick} 
+            className={`${styles.badgeButton} ${active ? styles.active : ''}`}
+        >{children}</button>
     )
 }
 

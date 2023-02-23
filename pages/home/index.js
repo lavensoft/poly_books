@@ -1,4 +1,4 @@
-import { BookDetailSection, Carousel, BookSubSection, GenreCard, BookSection, Container, Section, BookCard, View, LandingCarousel } from '@components';
+import { BookDetailSection, Carousel, BookSubSection, GenreCard, BadgeButton, Container, Section, BookCard, View, LandingCarousel } from '@components';
 import React from 'react';
 import {DATA} from '../../mock/index';
 import styles from './styles.module.scss';
@@ -92,7 +92,42 @@ const HomeView = () => {
                     </Row>
                 </Carousel>
             </Section>
-            <BookDetailSection/>
+
+            <Section 
+                title="Top Charts"
+                badges={[
+                    "Top selling",
+                    "Deals",
+                    "New releases in fiction",
+                    "New releases in fiction",
+                    "Top free"
+                ]}
+            >
+                <Carousel responsive={config.responsive.BookSection}>
+                    <Row>
+                    {
+                        data.map((book, index) => {
+                            return (
+                                <Col md={4} key={`book-card-col-1-${index}`}>
+                                    <BookCard img={book.img} title={book.title} price={book.price}/>
+                                </Col>
+                            )
+                        })
+                    }
+                    </Row>
+                    <Row style={{marginTop: 15}}>
+                    {
+                        data.map((book, index) => {
+                            return (
+                                <Col md={4} key={`book-card-col-${index}`}>
+                                    <BookCard img={book.img} title={book.title} price={book.price}/>
+                                </Col>
+                            )
+                        })
+                    }
+                    </Row>
+                </Carousel>
+            </Section>
         </View>
 
     )

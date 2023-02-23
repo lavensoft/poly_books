@@ -18,6 +18,7 @@ import { LandingCarousel } from './Carousel/LandingCarousel';
 import { Section } from "./Sections";
 import { GenreCard } from "./Cards/GenreCard";
 import { BookSubSection } from "./SubSection/BookSubSection";
+import BadgeButton from './Button/BadgeButton';
 
 export {
     Carousel,
@@ -39,5 +40,6 @@ export {
     LandingCarousel,
     Section,
     GenreCard,
-    BookSubSection
+    BookSubSection,
+    BadgeButton
 }
